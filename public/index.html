@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram - Iniciar sesión</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Contenedor Principal (Simula la pantalla del celular) -->
+    <div class="screen-container">
+        
+        <!-- Encabezado superior -->
+        <header class="header">
+            <div class="spacer"></div>
+            <div class="language-selector">
+                <span>Español</span>
+            </div>
+            <div class="spacer"></div>
+        </header>
+
+        <!-- Contenido Central -->
+        <main class="main-content">
+            <!-- Logo de Instagram -->
+            <div class="logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" width="100" height="100" style="border-radius:22px;">
+            </div>
+
+            <!-- Formulario de Acceso -->
+            <form id="login-form" class="login-form">
+                <div class="input-group">
+                    <input type="text" id="username" placeholder="Nombre de usuario, correo o celular" required autocomplete="username">
+                </div>
+                
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Contraseña" required autocomplete="current-password">
+                </div>
+
+                <!-- EL NUEVO BOTÓN REEMPLAZA AL ANTERIOR AQUÍ ADENTRO -->
+                <button type="submit" id="btn-submit" class="btn-primary">
+                    <span id="btn-text">Iniciar sesión</span>
+                    <div id="btn-spinner" class="spinner hidden"></div>
+                </button>
+            </form>
+
+            <!-- Enlace de recuperación -->
+            <a href="forgot-password.html" class="forgot-link">¿Olvidaste tu contraseña?</a>
+        </main>
+
+        <!-- Pie de Página -->
+        <footer class="footer">
+            <button class="btn-secondary">Crear cuenta nueva</button>
+            
+            <!-- Logo Meta -->
+            <div class="meta-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" class="meta-icon" style="width:36px;height:18px;">
+                    <path d="M5 15 C5 8, 12 3, 18 8 C21 11, 22 15, 24 18 C26 15, 27 11, 30 8 C36 3, 43 8, 43 15 C43 22, 36 27, 30 22 C27 19, 26 15, 24 18 C22 21, 21 22, 18 22 C12 22, 5 22, 5 15Z" fill="#0064e0"/>
+                </svg>
+                <span class="meta-text" style="color:#1c1e21;font-weight:700;font-size:14px;">Meta</span>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+0
+

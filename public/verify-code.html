@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisa tu correo</title>
+    <link rel="stylesheet" href="forgot.css">
+</head>
+<body>
+    <div class="screen-container">
+        <header class="header">
+            <button class="back-btn" onclick="window.location.href='forgot-password.html'">←</button>
+        </header>
+        <main class="forgot-content">
+            <h1 class="title">Revisa tu correo electrónico</h1>
+            <p class="subtitle" id="email-sent-msg">Enviamos un código a tu correo. Ingrésalo para confirmar tu cuenta.</p>
+            <div class="input-group">
+                <input type="text" id="code-input" placeholder="Ingresa el código" maxlength="6">
+            </div>
+            <p class="resend-note">
+                <span>🔄 Es posible que debas esperar unos minutos antes de recibir el código.</span>
+                <a href="#" class="blue-link" onclick="resendCode()">Obtener un código nuevo</a>
+            </p>
+            <button class="btn-primary" onclick="verifyCode()">Continuar</button>
+            <button class="btn-secondary" onclick="window.location.href='forgot-password.html'">Usar otro método</button>
+            <p id="error-msg" class="error-msg hidden"></p>
+        </main>
+    </div>
+    <script src="verify.js"></script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+/* ==========================================
+   RESET GENERAL Y TIPOGRAFÍA
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor tipo pantalla de smartphone */
+.screen-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 412px; /* Ancho estándar de un móvil moderno */
+    height: 100vh;
+    max-height: 892px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* ==========================================
+   HEADER (Selector de Idioma)
+   ========================================== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #1c1e21;
+    cursor: pointer;
+    width: 32px;
+    text-align: left;
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #737373;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.arrow {
+    font-size: 10px;
+}
+
+.spacer {
+    width: 32px; /* Simmetría con el botón de atrás */
+}
+
+/* ==========================================
+   MAIN (Logotipo y Formulario)
+   ========================================== */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 12px;
+    margin-top: -40px; /* Desplaza el centro ligeramente hacia arriba */
+}
+
+/* Recreación CSS pura del logotipo de Instagram */
+.logo-container {
+    margin-bottom: 40px;
+}
+
+.instagram-logo {
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border-radius: 22px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram-logo::before {
+    content: '';
+    width: 56px;
+    height: 56px;
+    border: 4.5px solid #ffffff;
+    border-radius: 17px;
+}
+
+.lens {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border: 4.5px solid #ffffff;
+    border-radius: 50%;
+}
+
+.flash {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+/* Formulario e inputs */
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.input-group {
+    width: 100%;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #dadde1;
+    border-radius: 12px;
+    font-size: 14px;
+    background-color: #fafafa;
+    color: #1c1e21;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+    border-color: #0064e0;
+    background-color: #ffffff;
+}
+
+.input-group input::placeholder {
+    color: #8d949e;
+}
+
+/* Botón Iniciar Sesión */
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    background-color: #0064e0;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:active {
+    background-color: #0056b3;
+}
+
+/* Enlace recuperar contraseña */
+.forgot-link {
+    margin-top: 20px;
+    color: #1c1e21;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ==========================================
+   FOOTER (Crear cuenta y Meta)
+   ========================================== */
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding-bottom: 16px;
+}
+
+.btn-secondary {
+    width: 100%;
+    padding: 12px;
+    background-color: transparent;
+    color: #0064e0;
+    border: 1px solid #0064e0;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-secondary:active {
+    background-color: #f0f7ff;
+}
+
+/* Estilo corporativo Meta */
+.meta-logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.meta-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.meta-text {
+    color: #8d949e;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+/* Contenedor del botón con posición relativa para alinear elementos */
+.btn-primary {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 48px; /* Evita que el botón cambie de tamaño durante la carga */
+}
+
+/* Animación de rotación */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Estilo del Spinner (Círculo de carga) */
+.spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid #ffffff;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+/* Clases utilitarias para ocultar/mostrar con JS */
+.hidden {
+    display: none !important;
+}
+0
+

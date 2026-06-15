@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.screen-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 412px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+}
+
+.header {
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #1c1e21;
+    cursor: pointer;
+}
+
+.forgot-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 12px;
+    gap: 16px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1c1e21;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #1c1e21;
+    line-height: 1.5;
+}
+
+.blue-link {
+    color: #0064e0;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #dadde1;
+    border-radius: 12px;
+    font-size: 14px;
+    background-color: #fafafa;
+    color: #1c1e21;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+    border-color: #0064e0;
+    background-color: #ffffff;
+}
+
+.input-group input::placeholder {
+    color: #8d949e;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    background-color: #0064e0;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:active {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    width: 100%;
+    padding: 12px;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.error-msg {
+    color: #e02020;
+    font-size: 13px;
+    text-align: center;
+}
+
+.success-msg {
+    color: #00a852;
+    font-size: 13px;
+    text-align: center;
+}
+
+.resend-note {
+    font-size: 13px;
+    color: #606770;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.hidden {
+}
